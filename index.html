@@ -97,13 +97,32 @@
 				.invoice-box table tr.top table td {
 					width: 100%;
 					display: block;
-					text-align: center;
+					
                 }
 				.invoice-box table tr.information table td {
 					width: 100%;
 					display: block;
-					text-align: center;
 				}
+				.crepixa-address{
+					display: flex;
+					justify-content: left;
+					flex-wrap: wrap;
+				}
+				.crepixa-address .address{
+					flex: 100%;
+					width: 100%;
+				}
+				.crepixa-address .invoice{
+					flex: 100%;
+					width: 100%;
+					margin-top: 30px;
+					margin-left: -60px;
+					padding-left: 0;
+					text-align: left;
+				} 
+				.crepixa-address .invoice h2{
+					padding-left: 0;
+				} 
 				.footer-main{
 					width: 50%;
 					margin: auto;
@@ -113,6 +132,17 @@
 					width: 50%;
 					display: flex;
 					flex-wrap: wrap;
+				}
+				.invoice-box table tr.discount td{
+					font-size: .9rem;
+				}
+				.invoice-box table tr.balance td.balance-price{
+					font-size: .9rem;
+					padding: 1px;
+					height: 20px;
+				}
+				.invoice-box table tr.balance td.balance-title{
+					font-size: .9rem;
 				}
 			}
 		</style>
@@ -207,25 +237,25 @@
 
 
 
-                <tr style="color: #000; font-weight: bold; font-size: .9rem; font-family: 'Roboto Condensed', sans-serif;">
+                <tr class="discount" style="color: #000; font-weight: bold; font-size: .9rem; font-family: 'Roboto Condensed', sans-serif;">
 					<td style="width: 50%; text-align: center;">Remarks/Payment Instructions:</td>
 					<td style="width: 8%; text-align: center;"></td>
                     <td style="width: 24%; text-align: center;">SUBTOTAL</td>
 					<td style="width: 18%; text-align: center; border-bottom: 1px solid #808080;">300.00</td>
 				</tr>
-                <tr style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif;">
+                <tr class="discount" style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif;">
 					<td style="width: 50%; text-align: center;"></td>
 					<td style="width: 8%; text-align: center;"></td>
                     <td style="width: 24%; text-align: center;">DISCOUNT</td>
 					<td style="width: 18%; text-align: center; border-bottom: 1px solid #808080;">0.00</td>
 				</tr>
-                <tr style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif;">
+                <tr class="discount" style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif;">
 					<td style="width: 50%; text-align: center;"></td>
 					<td style="width: 8%; text-align: center;"></td>
                     <td style="width: 24%; text-align: center;">TAX RATE</td>
 					<td style="width: 18%; text-align: center; border-bottom: 1px solid #808080;">0.00%</td>
 				</tr>
-                <tr style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif;">
+                <tr class="discount" style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif;">
 					<td style="width: 50%; text-align: center;"></td>
 					<td style="width: 8%; text-align: center;"></td>
                     <td style="width: 24%; text-align: center;">TOTAL TAX</td>
@@ -234,8 +264,8 @@
                 <tr class="balance" style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif; ">
 					<td style="width: 50%; text-align: center;"></td>
 					<td style="width: 8%; text-align: center;"></td>
-                    <td style="width: 24%; text-align: center; font-size: 1.3rem;">Balance Due</td>
-					<td style="width: 18%; text-align: center; border-bottom: 1px solid #808080; background-color: #00e673; padding: 10px;">300$-</td>
+                    <td class="balance-title" style="width: 24%; text-align: center; font-size: 1.3rem;">Balance Due</td>
+					<td class="balance-price" style="width: 18%; text-align: center; border-bottom: 1px solid #808080; background-color: #00e673; padding: 10px;">300$-</td>
 				</tr>
 			</table>
 			<table class="fotter-main" style=" margin-top: 250px; width: 90%; line-height: .5; text-align: left; font-size: .7rem; color: #000;">
