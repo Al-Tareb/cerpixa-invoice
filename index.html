@@ -4,17 +4,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title></title>
-        <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+       
 		<link rel="icon" href="./images/favicon.png" type="image/x-icon" />
-
-		<!-- Invoice styling -->
 		<style>
 			body{
 				padding: 0;
 				margin: 0;
 				box-sizing: border-box;
+				font-family: 'Poppins', sans-serif;
+
 			}
 			.invoice-box {
 				max-width: 800px;
@@ -24,8 +25,6 @@
 				box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 				font-size: 16px;
 				line-height: 24px;
-				font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-				color: #555;
 			}
 			.invoice-box table {
 				width: 85%;
@@ -91,7 +90,6 @@
 				box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 				font-size: 16px;
 				line-height: 24px;
-				font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
 				color: #555;
 			}
 				.invoice-box table tr.top table td {
@@ -116,7 +114,6 @@
 					flex: 100%;
 					width: 100%;
 					margin-top: 30px;
-					margin-left: -60px;
 					padding-left: 0;
 					text-align: left;
 				} 
@@ -160,26 +157,26 @@
                                 
                                 <td></td>
                                 <td class="logo" style="">
-									<img src="./logo.png" alt="Company logo" style="width: 200px; margin-left: 10%; " />
+									<img src="./logo.png" alt="Company logo" style="width: 150px; margin-left: 10%; " />
 								</td>
                             </tr>
                             <tr>
-                                <td class="header-title" style="color: #555; font-size: .9rem;">
+                                <td class="header-title" style="color: #555; font-size: .7rem; font-weight: 500;">
                                     Crepixa UG Limesstr. 4b.63450 Hanau
                                 </td>
                             </tr>
 							<tr class="crepixa-address" style="width: 100%; text-align: left;">
-								<td class="address" style="color: #000; font-weight: bold; font-size: .9rem; text-align: left;">
+								<td class="address" style="color: #000; font-weight: 700; font-size: .9rem; text-align: left;">
 									Abdulhameed Al-Mahfadi<br />
 									Heimstättenstr.16<br />
 									30139 Hannover<br />
                                     Germany
 								</td>
-                                <td class="invoice" style="text-align: center; width: 60%; color: #000; font-size: .9rem; font-weight: bold;">
-                                    <h2 style="font-size: 2rem; text-align: left; padding-left: 20%; font-weight: bold; color: #000; margin-top: -10px; margin-bottom: 50px;" >Invoice</h2>
-									Invoice no: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    000000001<br />
-									Invoice date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  01/10/2022<br />
-									Payment due date: &nbsp; 15/10/2022
+                                <td class="invoice" style="text-align: left; width: 50%; color: #000; font-size: .9rem; font-weight: bold;">
+                                    <h2 style="font-size: 2rem; text-align: left; font-weight: bold; color: #000; margin-top: -10px; margin-bottom: 50px;" >Invoice</h2>
+									Invoice no: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;<span style="font-weight: 500;">000000001</span> <br />
+									Invoice date: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-weight: 500;">01/10/2022</span> <br />
+									Payment due date: &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-weight: 500;">15/10/2022</span> 
 								</td>
 							</tr>
 
@@ -237,34 +234,34 @@
 
 
 
-                <tr class="discount" style="color: #000; font-weight: bold; font-size: .9rem; font-family: 'Roboto Condensed', sans-serif;">
+                <tr class="discount" style="color: #000; font-weight: bold; font-size: .9rem;">
 					<td style="width: 50%; text-align: center;">Remarks/Payment Instructions:</td>
 					<td style="width: 8%; text-align: center;"></td>
                     <td style="width: 24%; text-align: center;">SUBTOTAL</td>
 					<td style="width: 18%; text-align: center; border-bottom: 1px solid #808080;">300.00</td>
 				</tr>
-                <tr class="discount" style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif;">
+                <tr class="discount" style="color: #000; font-weight: bold; font-size: .9rem;">
 					<td style="width: 50%; text-align: center;"></td>
 					<td style="width: 8%; text-align: center;"></td>
                     <td style="width: 24%; text-align: center;">DISCOUNT</td>
 					<td style="width: 18%; text-align: center; border-bottom: 1px solid #808080;">0.00</td>
 				</tr>
-                <tr class="discount" style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif;">
+                <tr class="discount" style="color: #000; font-weight: bold; font-size: .9rem;">
 					<td style="width: 50%; text-align: center;"></td>
 					<td style="width: 8%; text-align: center;"></td>
                     <td style="width: 24%; text-align: center;">TAX RATE</td>
 					<td style="width: 18%; text-align: center; border-bottom: 1px solid #808080;">0.00%</td>
 				</tr>
-                <tr class="discount" style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif;">
+                <tr class="discount" style="color: #000; font-weight: bold; font-size: .9rem;">
 					<td style="width: 50%; text-align: center;"></td>
 					<td style="width: 8%; text-align: center;"></td>
                     <td style="width: 24%; text-align: center;">TOTAL TAX</td>
 					<td style="width: 18%; text-align: center; border-bottom: 1px solid #808080;">0.00</td>
 				</tr>
-                <tr class="balance" style="color: #000; font-weight: bold; font-size: 1rem; font-family: 'Roboto Condensed', sans-serif; ">
+                <tr class="balance" style="color: #000; font-weight: bold; font-size: .9rem;">
 					<td style="width: 50%; text-align: center;"></td>
 					<td style="width: 8%; text-align: center;"></td>
-                    <td class="balance-title" style="width: 24%; text-align: center; font-size: 1.3rem;">Balance Due</td>
+                    <td class="balance-title" style="width: 24%; text-align: center; font-size: 1.2rem;">Balance Due</td>
 					<td class="balance-price" style="width: 18%; text-align: center; border-bottom: 1px solid #808080; background-color: #00e673; padding: 10px;">300$-</td>
 				</tr>
 			</table>
